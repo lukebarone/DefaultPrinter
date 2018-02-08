@@ -5,8 +5,9 @@ Default Printer
 
 ## 0. Tested Environments
 
+
 | Operating System | Admin Privileges | Working? |
-+------------------+------------------+----------+
+|:---|  :---:  |  :---:  |
 | Windows 10 x64   |         YES      |    YES   |
 | Windows 10 x86   |         NO       | Untested |
 | Windows 10 x86   |         YES      | Untested |
@@ -23,7 +24,7 @@ Default Printer
 | Windows 7 x64    |         NO       | Untested |
 | Windows 7 x86    |         YES      | Untested |
 | Windows 7 x86    |         NO       | Untested |
-+------------------+------------------+----------+
+
 
 > To qualify for "Working", the four main features must work:
 >
