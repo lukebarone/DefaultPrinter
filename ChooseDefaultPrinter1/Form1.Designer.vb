@@ -59,6 +59,7 @@ Partial Class frmMain
         Me.Help.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Help.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Help.Image = Global.ChooseDefaultPrinter.My.Resources.Resources.Question_16x
+        Me.Help.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Help.Location = New System.Drawing.Point(293, 293)
         Me.Help.Name = "Help"
         Me.Help.Size = New System.Drawing.Size(196, 54)
@@ -72,6 +73,7 @@ Partial Class frmMain
         Me.cmdOpenPrintersFolder.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmdOpenPrintersFolder.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdOpenPrintersFolder.Image = Global.ChooseDefaultPrinter.My.Resources.Resources.PrintStatusBar1_16x
+        Me.cmdOpenPrintersFolder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdOpenPrintersFolder.Location = New System.Drawing.Point(14, 293)
         Me.cmdOpenPrintersFolder.Name = "cmdOpenPrintersFolder"
         Me.cmdOpenPrintersFolder.Size = New System.Drawing.Size(273, 54)
@@ -85,6 +87,7 @@ Partial Class frmMain
         Me.cmdRefreshPrinterList.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmdRefreshPrinterList.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdRefreshPrinterList.Image = Global.ChooseDefaultPrinter.My.Resources.Resources.Refresh_16x
+        Me.cmdRefreshPrinterList.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdRefreshPrinterList.Location = New System.Drawing.Point(293, 356)
         Me.cmdRefreshPrinterList.Name = "cmdRefreshPrinterList"
         Me.cmdRefreshPrinterList.Size = New System.Drawing.Size(196, 54)
@@ -98,6 +101,7 @@ Partial Class frmMain
         Me.cmdSetDefaultPrinter.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmdSetDefaultPrinter.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdSetDefaultPrinter.Image = Global.ChooseDefaultPrinter.My.Resources.Resources.Checkmark_16x
+        Me.cmdSetDefaultPrinter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.cmdSetDefaultPrinter.Location = New System.Drawing.Point(14, 356)
         Me.cmdSetDefaultPrinter.Name = "cmdSetDefaultPrinter"
         Me.cmdSetDefaultPrinter.Size = New System.Drawing.Size(273, 54)
