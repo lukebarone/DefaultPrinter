@@ -95,7 +95,7 @@ Public Class frmMain
     Private Sub cmdOpenPrintersFolder_Click(sender As Object, e As EventArgs) Handles cmdOpenPrintersFolder.Click
         ' Opens the "Printers" folder in Explorer. Different from the Devices and Printers folder (Vista
         '   and higher), as it shows every Printer Queue individually.
-        Process.Start(Environment.SystemDirectory + "\explorer.exe", "shell:::{2227A280-3AEA-1069-A2DE-08002B30309D}")
+        Process.Start("C:\Windows\explorer.exe", "shell:::{2227A280-3AEA-1069-A2DE-08002B30309D}")
     End Sub
 
     Private Sub Help_Click(sender As Object, e As EventArgs) Handles Help.Click
