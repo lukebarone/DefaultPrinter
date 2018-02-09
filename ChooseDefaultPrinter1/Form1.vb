@@ -46,7 +46,8 @@ Public Class frmMain
     Public Function LetUsManageIt() As Boolean
         ' Returns TRUE if we are able to choose the default printer ourself. Returns FALSE on error
         ' Windows 10 wants to manage your default printer, by default. We need to turn off that option
-        '   in order to choose a default printer ourself.
+        '   in order to choose a default printer ourself. Based on initial testing, this setting is
+        '   not used in previous versions of Windows, so it doesn't hurt to add it.
         Dim RegKey As String = "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows"
         Dim RegName As String = "LegacyDefaultPrinterMode"
         If (My.Computer.Registry.GetValue(RegKey, RegName, 1)) Then ' The entry exists, and is correct

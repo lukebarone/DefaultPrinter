@@ -9,7 +9,7 @@ Default Printer
 | Operating System | Admin Privileges | Working? |
 |:---|  :---:  |  :---:  |
 | Windows 10 x64   |         YES      |    YES   |
-| Windows 10 x86   |         NO       | Untested |
+| Windows 10 x86   |         NO       | YES |
 | Windows 10 x86   |         YES      | Untested |
 | Windows 10 x86   |         NO       | Untested |
 | Windows 8.1 x64  |         YES      | Untested |
