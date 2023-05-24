@@ -78,7 +78,7 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>502C2C41AF25E1CA64966CA39C6E4C2E93724633</ManifestCertificateThumbprint>
@@ -93,7 +93,7 @@
     <AssemblyOriginatorKeyFile>ChooseDefaultPrinterKeyFile.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>false</GenerateManifests>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>Internet</TargetZone>
