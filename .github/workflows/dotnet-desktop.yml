@@ -110,8 +110,8 @@ jobs:
 
   release:
     strategy:
-    matrix:
-      configuration: Release
+      matrix:
+        configuration: Release
 
     runs-on: windows-latest
     # Add it as a release
