@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  A strongly-typed resource class, for looking up localized strings, etc.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
@@ -82,7 +82,7 @@ Namespace My.Resources
         '''copies of the Software, and to permit persons to whom the Software is
         '''furnished to do so, subject to the following conditions:
         '''
-        '''The above copyright no [rest of string was truncated]&quot;;.
+        '''The above copyright notice and th [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property LICENSE() As String
             Get
@@ -119,7 +119,7 @@ Namespace My.Resources
         '''I - Introduction
         '''----------------
         '''
-        '''I wrote this program for new systems running Windows 10, and having many printers installed. I am hoping that it is an easier way to choose your default printer, as opposed to the new PC Settings method, or letting Windows 10 choose for you. This has been known to be buggy in certain instances. If this is not the easy way of choosing a default printer, then [rest of string was truncated]&quot;;.
+        '''I wrote this program for new systems running Windows 10, and having many printers installed. I am hoping that it is an easier way to choose your default printer, as opposed to the new PC Settings method, or letting Windows 10 choose for you. This has been known to be buggy in certain instances. If this is not the easy way of choosing a default printer, then I feel  [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property README() As String
             Get
