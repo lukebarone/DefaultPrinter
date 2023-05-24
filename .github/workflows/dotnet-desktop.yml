@@ -52,12 +52,10 @@ jobs:
       matrix:
         configuration: [Debug, Release]
 
-    runs-on: windows-latest  # For a list of available runner types, refer to
-                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
+    runs-on: windows-latest
 
     env:
       Solution_Name: ChooseDefaultPrinter.sln
-      Test_Project_Path: your-test-project-path
       Wap_Project_Directory: WapProjTemplate2
       Wap_Project_Path: WapProjTemplate2\WapProjTemplate2.wapproj
 
@@ -76,10 +74,6 @@ jobs:
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
-
-    # Execute all unit tests in the solution (no tests)
-    # - name: Execute unit tests
-    #   run: dotnet test
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
@@ -114,6 +108,12 @@ jobs:
         name: MSIX Package
         path: ${{ env.Wap_Project_Directory }}\AppPackages
 
+  release:
+    strategy:
+    matrix:
+      configuration: Release
+
+    runs-on: windows-latest
     # Add it as a release
     - name: Publish release
       uses: svenstaro/upload-release-action@v2
