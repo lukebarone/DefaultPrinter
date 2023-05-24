@@ -114,6 +114,7 @@ jobs:
         configuration: Release
 
     runs-on: windows-latest
+    steps:
     # Add it as a release
     - name: Publish release
       uses: svenstaro/upload-release-action@v2
