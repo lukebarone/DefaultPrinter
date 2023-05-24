@@ -111,7 +111,7 @@ jobs:
   release:
     strategy:
       matrix:
-        configuration: Release
+        configuration: [Release]
 
     runs-on: windows-latest
     steps:
