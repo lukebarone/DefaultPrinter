@@ -108,7 +108,7 @@ jobs:
     #   run: Get-ChildItem -Recurse ${{ env.Wap_Project_Directory }}
     # Upload the package
     - name: Zip the package
-      run: Compress-Archive -Path ChooseDefaultPrinter1\bin\Release\app.publish\* -DestinationPath "Choose Default Printer.zip"
+      run: Compress-Archive -Path ${{ env.Wap_Project_Directory }}\obj\Release\PackageUploadLayout\ChooseDefaultPrinter1\* -DestinationPath "Choose Default Printer.zip"
 
     # Add it as a release
     - name: Publish release
