@@ -76,7 +76,7 @@ Public Class frmMain
         UpdateDefaultPrinterLabel()
     End Sub
 
-    Private Sub cmdSetDefaultPrinter_Click(sender As Object, e As EventArgs) Handles cmdSetDefaultPrinter.Click
+    Private Sub cmdSetDefaultPrinter_Click(sender As Object, e As EventArgs) Handles cmdSetDefaultPrinter.Click, lstPrinterList.DoubleClick
         ' The magic button! Checks if we are able to manage the printers ourselves; if we can, set the
         '   default printer to what is chosen in the list.
         If LetUsManageIt() Then
@@ -102,4 +102,5 @@ Public Class frmMain
     Private Sub Help_Click(sender As Object, e As EventArgs) Handles Help.Click
         AboutBox1.Show(Me)
     End Sub
+
 End Class
