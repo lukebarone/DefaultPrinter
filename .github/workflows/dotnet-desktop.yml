@@ -107,21 +107,27 @@ jobs:
       with:
         name: MSIX Package
         path: ${{ env.Wap_Project_Directory }}\AppPackages
-
-  release:
-    needs: build
-    strategy:
-      matrix:
-        configuration: [Release]
-
-    runs-on: windows-latest
-    steps:
-    # Add it as a release
-    - name: Publish release
-      uses: svenstaro/upload-release-action@v2
+    # Upload the EXE
+    - name: Upload the EXE
+      uses: actions/upload-artifact@v3
       with:
-        repo_token: ${{ secrets.DEPLOY_KEY }}
-        file: D:\a\DefaultPrinter\DefaultPrinter\ChooseDefaultPrinter1\bin\Release\app.publish\Choose Default Printer.exe
-        asset_name: Choose Default Printer
-        tag: ${{ github.ref }}
-        overwrite: true
+        name: Choose Default Printer
+        path: ChooseDefaultPrinter1\bin\Release\app.publish\Choose Default Printer.exe
+
+  # release:
+  #   needs: build
+  #   strategy:
+  #     matrix:
+  #       configuration: [Release]
+
+  #   runs-on: windows-latest
+  #   steps:
+  #   # Add it as a release
+  #   - name: Publish release
+  #     uses: svenstaro/upload-release-action@v2
+  #     with:
+  #       repo_token: ${{ secrets.DEPLOY_KEY }}
+  #       file: D:\a\DefaultPrinter\DefaultPrinter\ChooseDefaultPrinter1\bin\Release\app.publish\Choose Default Printer.exe
+  #       asset_name: Choose Default Printer
+  #       tag: ${{ github.ref }}
+  #       overwrite: true
