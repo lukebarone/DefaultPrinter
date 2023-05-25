@@ -118,6 +118,6 @@ jobs:
       with:
         repo_token: ${{ secrets.DEPLOY_KEY }}
         file: ${{ env.Wap_Project_Directory }}\obj\Release\PackageUploadLayout\ChooseDefaultPrinter1\
-        asset_name: Choose Default Printer ${{ github.ref }}.zip
-        tag: ${{ github.ref }}
+        asset_name: Choose Default Printer.zip
+        tag: master
         overwrite: true
