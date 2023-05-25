@@ -50,7 +50,7 @@ jobs:
 
     strategy:
       matrix:
-        configuration: [Debug, Release]
+        configuration: [Release]
 
     runs-on: windows-latest
 
@@ -107,6 +107,9 @@ jobs:
       with:
         name: MSIX Package
         path: ${{ env.Wap_Project_Directory }}\AppPackages
+    # List the directory (DEBUG)
+    - name: List the files
+      run: ls ChooseDefaultPrinter1\bin\Release\app.publish
     # Upload the EXE
     - name: Upload the EXE
       uses: actions/upload-artifact@v3
