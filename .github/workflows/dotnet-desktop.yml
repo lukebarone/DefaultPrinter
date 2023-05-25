@@ -107,17 +107,15 @@ jobs:
     # - name: List the files
     #   run: Get-ChildItem -Recurse ${{ env.Wap_Project_Directory }}
     # Upload the package
-    - name: Upload the package
-      uses: actions/upload-artifact@v3
-      with:
-        name: Choose Default Printer
-        path: ChooseDefaultPrinter1\bin\Release\app.publish\*
+    - name: Zip the package
+      run: Compress-Archive -Path ChooseDefaultPrinter1\bin\Release\app.publish\* -DestinationPath "Choose Default Printer.zip"
+
     # Add it as a release
     - name: Publish release
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.DEPLOY_KEY }}
-        file: ${{ env.Wap_Project_Directory }}\obj\Release\PackageUploadLayout\ChooseDefaultPrinter1\
+        file: Choose Default Printer.zip
         asset_name: Choose Default Printer.zip
         tag: master
         overwrite: true
