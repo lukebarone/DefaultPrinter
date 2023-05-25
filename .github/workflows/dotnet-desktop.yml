@@ -109,7 +109,7 @@ jobs:
         path: ${{ env.Wap_Project_Directory }}\AppPackages
     # List the directory (DEBUG)
     - name: List the files
-      run: ls ChooseDefaultPrinter1\bin\Release\app.publish
+      run: Get-ChildItem -Recurse ChooseDefaultPrinter1\bin\Release\
     # Upload the EXE
     - name: Upload the EXE
       uses: actions/upload-artifact@v3
