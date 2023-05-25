@@ -41,13 +41,9 @@ name: .NET Core Desktop
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
 
 jobs:
-
   build:
-
     strategy:
       matrix:
         configuration: [Release]
@@ -125,21 +121,3 @@ jobs:
         asset_name: Choose Default Printer ${{ github.ref }}.zip
         tag: ${{ github.ref }}
         overwrite: true
-
-  # release:
-  #   needs: build
-  #   strategy:
-  #     matrix:
-  #       configuration: [Release]
-
-  #   runs-on: windows-latest
-  #   steps:
-  #   # Add it as a release
-  #   - name: Publish release
-  #     uses: svenstaro/upload-release-action@v2
-  #     with:
-  #       repo_token: ${{ secrets.DEPLOY_KEY }}
-  #       file: D:\a\DefaultPrinter\DefaultPrinter\ChooseDefaultPrinter1\bin\Release\app.publish\Choose Default Printer.exe
-  #       asset_name: Choose Default Printer
-  #       tag: ${{ github.ref }}
-  #       overwrite: true
